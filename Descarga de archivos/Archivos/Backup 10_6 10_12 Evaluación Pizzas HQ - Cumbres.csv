@@ -1,0 +1,299 @@
+,,,,,,30,15,30,15,10,,,,,,,
+Photo Link,Fecha,Hora,Tipo,Super Cheese,Forma redonda,Tiene Burbuja,Bordes Limpios,Distribución de Ingredientes,Nivel de Horneado,Grasa en Superficie,Puntos Burbuja,Puntos Bordes,Puntos distribucion,Puntos Horneado,Puntos Grasa,Puntaje Total,Criterio
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-07/vlcsnap-2025-10-06-23h01m44s766.png,10/6,12:03,Otra,No,,No,No,Aceptable,Correcto,No,35,0,20,15,10,80,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-07/vlcsnap-2025-10-06-23h02m01s639.png,10/6,12:05,Queso,No,,No,Sí,Correcta,Alto,No,35,10,30,5,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-07/vlcsnap-2025-10-06-23h02m27s946.png,10/6,12:21,3 Meat Treat,No,,No,No,Aceptable,Correcto,No,35,0,20,15,10,80,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-07/vlcsnap-2025-10-06-23h03m01s901.png,10/6,12:48,Pepperoni,No,,No,No,Media,Alto,No,35,0,15,5,10,65,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-07/vlcsnap-2025-10-06-23h03m26s947.png,10/6,12:59,Pepperoni,No,,No,Sí,Mala,Correcto,No,35,10,5,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-07/vlcsnap-2025-10-06-23h03m50s589.png,10/6,13:10,Pepperoni,No,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-07/vlcsnap-2025-10-06-23h03m58s354.png,10/6,13:14,LTO,Sí,,No,No,Correcta,Correcto,No,35,0,30,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-07/vlcsnap-2025-10-06-23h04m13s555.png,10/6,13:19,3 Meat Treat,No,,No,No,Aceptable,Correcto,No,35,0,20,15,10,80,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-07/vlcsnap-2025-10-06-23h04m30s763.png,10/06,13:32,Pepperoni,No,,Sí,Sí,Media,Correcto,No,0,10,15,15,10,50,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-07/vlcsnap-2025-10-06-23h04m41s008.png,10/6,13:55,Pepperoni,No,,No,No,Aceptable,Alto,No,35,0,20,5,10,70,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-07/vlcsnap-2025-10-06-23h04m58s363.png,10/6,14:07,Queso,No,,Sí,No,Correcta,Correcto,No,0,0,30,15,10,55,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-07/vlcsnap-2025-10-06-23h05m14s810.png,10/6,14:17,Pepperoni,No,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-07/vlcsnap-2025-10-06-23h05m20s892.png,10/6,14:22,Pepperoni,No,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-07/vlcsnap-2025-10-06-23h05m29s028.png,10/6,14:26,Otra,Sí,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-07/vlcsnap-2025-10-06-23h05m54s367.png,10/6,14:48,Pepperoni,No,,No,No,Correcta,Alto,No,35,0,30,5,10,80,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-07/vlcsnap-2025-10-06-23h06m14s662.png,10/6,18:07,Pepperoni,No,,No,No,Mala,Bajo,No,35,0,5,5,10,55,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-07/vlcsnap-2025-10-06-23h06m17s280.png,10/6,18:09,Pepperoni,No,,No,No,Media,Correcto,No,35,0,15,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-07/vlcsnap-2025-10-06-23h06m25s920.png,10/6,18:16,Pepperoni,Sí,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-07/vlcsnap-2025-10-06-23h06m35s124.png,10/6,18:18,Pepperoni,No,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-07/vlcsnap-2025-10-06-23h06m49s458.png,10/6,18:27,Pepperoni,No,,Sí,No,Mala,Correcto,No,0,0,5,15,10,30,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-07/vlcsnap-2025-10-06-23h07m13s806.png,10/6,18:56,3 Meat Treat,No,,No,No,Aceptable,Correcto,No,35,0,20,15,10,80,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-07/vlcsnap-2025-10-06-23h07m23s432.png,10/6,18:58,Pepperoni,No,,Sí,No,Media,Correcto,No,0,0,15,15,10,40,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-07/vlcsnap-2025-10-06-23h07m30s033.png,10/6,19:00,Pepperoni,No,,No,No,Mala,Correcto,No,35,0,5,15,10,65,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-07/vlcsnap-2025-10-06-23h08m36s563.png,10/6,19:19,Pepperoni,No,,No,No,Media,Correcto,No,35,0,15,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-07/vlcsnap-2025-10-06-23h08m58s641.png,10/6,19:22,Pepperoni,No,,No,No,Aceptable,Correcto,No,35,0,20,15,10,80,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-07/vlcsnap-2025-10-06-23h10m20s629.png,10/6,20:25,Pepperoni,No,,Sí,No,Media,Correcto,No,0,0,15,15,10,40,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-07/vlcsnap-2025-10-06-23h10m47s994.png,10/6,20:44,3 Meat Treat,No,,No,Sí,Correcta,Correcto,No,35,10,30,15,10,100,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-07/vlcsnap-2025-10-06-23h10m54s226.png,10/6,20:47,3 Meat Treat,No,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-07/vlcsnap-2025-10-06-23h10m56s279.png,10/6,20:48,Extra Extra,Sí,,No,Sí,Correcta,Insuficiente,No,35,10,30,0,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-07/vlcsnap-2025-10-06-23h11m00s311.png,10/6,20:53,Extra Extra,No,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-07-23h27m27s268.png,10/7,12:46,3 Meat Treat,Sí,,No,Sí,Correcta,Alto,No,35,10,30,5,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-07-23h28m07s856.png,10/7,13:00,LTO,No,,No,Sí,Correcta,Correcto,No,35,10,30,15,10,100,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-07-23h28m18s922.png,10/7,13:02,Pepperoni,No,,No,Sí,Mala,Correcto,No,35,10,5,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-07-23h28m30s322.png,10/7,13:06,Pepperoni,No,,No,Sí,Deficiente,Correcto,No,35,10,0,15,10,70,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-07-23h28m43s458.png,10/7,13:08,Pepperoni,No,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-07-23h29m37s623.png,10/7,13:30,Pepperoni,No,,Sí,No,Mala,Correcto,No,0,0,5,15,10,30,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-07-23h29m41s593.png,10/7,13:32,Pepperoni,No,,Sí,No,Mala,Correcto,No,0,0,5,15,10,30,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-07-23h29m58s041.png,10/07,13:53,Pepperoni,No,,No,No,Media,Correcto,No,35,0,15,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-07-23h31m22s757.png,10/7,14:04,3 Meat Treat,Sí,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-07-23h31m37s803.png,10/07,14:11,Pepperoni,Sí,,No,Sí,Media,Alto,Sí,35,10,15,5,0,65,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-07-23h32m13s397.png,10/7,14:28,Pepperoni,No,,Sí,Sí,Mala,Correcto,No,0,10,5,15,10,40,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-07-23h32m17s360.png,10/7,14:29,Pepperoni,No,,No,Sí,Aceptable,Correcto,Sí,35,10,20,15,0,80,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-07-23h32m38s357.png,10/7,14:34,Pepperoni,Sí,,No,Sí,Media,Correcto,Sí,35,10,15,15,0,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-07-23h33m00s287.png,10/7,14:44,Pepperoni,No,,No,Sí,Mala,Correcto,No,35,10,5,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-07-23h33m42s737.png,10/7,18:22,3 Meat Treat,Sí,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-07-23h34m16s795.png,10/7,18:58,Pepperoni,No,,Sí,No,Deficiente,Correcto,No,0,0,0,15,10,25,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-07-23h34m25s284.png,10/7,19:00,Pepperoni,No,,Sí,No,Mala,Correcto,No,0,0,5,15,10,30,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-07-23h34m29s105.png,10/7,19:01,Pepperoni,No,,No,Sí,Mala,Correcto,No,35,10,5,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-07-23h34m49s634.png,10/7,19:10,Pepperoni,No,,No,No,Mala,Correcto,No,35,0,5,15,10,65,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-07-23h35m02s860.png,10/7,19:14,Otra,No,,No,No,Aceptable,Correcto,No,35,0,20,15,10,80,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-07-23h35m56s077.png,10/7,19:40,Pepperoni,No,,No,No,Media,Bajo,No,35,0,15,5,10,65,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-07-23h36m09s334.png,10/7,19:42,Pepperoni,No,,No,No,Media,Correcto,No,35,0,15,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-07-23h36m49s298.png,10/7,20:15,Pepperoni,Sí,,No,No,Deficiente,Correcto,No,35,0,0,15,10,60,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-07-23h36m59s184.png,10/7,20:18,Pepperoni,Sí,,Sí,No,Mala,Alto,No,0,0,5,5,10,20,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-07-23h37m20s242.png,10/7,20:31,Pepperoni,No,,No,No,Deficiente,Correcto,No,35,0,0,15,10,60,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-07-23h37m41s572.png,10/7,20:40,Pepperoni,No,,No,No,Deficiente,Correcto,No,35,0,0,15,10,60,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-07-23h37m46s882.png,10/7,20:42,Pepperoni,Sí,,Sí,Sí,Media,Correcto,No,0,10,15,15,10,50,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-07-23h38m01s509.png,10/7,20:50,Pepperoni,No,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-07-23h38m08s525.png,10/7,20:55,Otra,No,,No,No,Aceptable,Correcto,No,35,0,20,15,10,80,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h35m16s744.png,10/08,12:20,Pepperoni,No,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h35m31s034.png,10/08,12:37,Pepperoni,No,,Sí,No,Aceptable,Alto,No,0,0,20,5,10,35,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h35m35s216.png,10/08,12:38,Pepperoni,No,,Sí,Sí,Media,Correcto,No,0,10,15,15,10,50,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h35m51s985.png,10/08,12:46,Pepperoni,No,,Sí,Sí,Aceptable,Alto,Sí,0,10,20,5,0,35,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h35m53s656.png,10/08,12:47,Pepperoni,No,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h36m07s345.png,10/08,12:49,Pepperoni,No,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h36m39s686.png,10/8,13:11,Pepperoni,No,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h36m47s379.png,10/08,13:11,Pepperoni,No,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h36m51s412.png,10/08,13:15,Pepperoni,No,,Sí,Sí,Media,Alto,Sí,0,10,15,5,0,30,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h36m53s957.png,10/08,13:16,Pepperoni,No,,No,Sí,Media,Alto,Sí,35,10,15,5,0,65,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h37m18s839.png,10/08,13:19,Pepperoni,No,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h37m43s766.png,10/08,13:32,Pepperoni,Sí,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h38m05s762.png,10/08,13:53,Pepperoni,No,,No,Sí,Mala,Correcto,Sí,35,10,5,15,0,65,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h38m13s753.png,10/8,13:54,Pepperoni,No,,Sí,No,Aceptable,Correcto,No,0,0,20,15,10,45,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h38m16s586.png,10/08,13:56,Pepperoni,No,,No,No,Deficiente,Correcto,No,35,0,0,15,10,60,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h38m20s483.png,10/08,13:58,Pepperoni,Sí,,No,Sí,Deficiente,Correcto,No,35,10,0,15,10,70,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h38m35s275.png,10/8,14:02,Queso,No,,No,Sí,Aceptable,Alto,No,35,10,20,5,10,80,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h39m02s847.png,10/08,14:14,Pepperoni,No,,Sí,No,Media,Correcto,No,0,0,15,15,10,40,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h39m07s389.png,10/08,14:17,Pepperoni,No,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h39m22s385.png,10/08,14:24,Pepperoni,Sí,,No,Sí,Deficiente,Correcto,No,35,10,0,15,10,70,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h39m25s558.png,10/08,14:26,Pepperoni,No,,No,Sí,Mala,Correcto,No,35,10,5,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h39m30s766.png,10/08,14:31,Pepperoni,No,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h39m35s790.png,10/08,14:32,Pepperoni,No,,No,Sí,Mala,Correcto,Sí,35,10,5,15,0,65,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h39m38s321.png,10/8,14:33,3 Meat Treat,No,,No,No,Aceptable,Correcto,No,35,0,20,15,10,80,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h39m41s427.png,10/08,14:35,Pepperoni,No,,No,No,Aceptable,Alto,Sí,35,0,20,5,0,60,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h39m46s827.png,10/08,14:37,LTO,No,,No,No,Correcta,Correcto,No,35,0,30,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h39m54s355.png,10/08,14:39,Otra,No,,No,No,Aceptable,Correcto,No,35,0,20,15,10,80,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h40m10s780.png,10/08,14:45,Pepperoni,No,,No,No,Deficiente,Correcto,Sí,35,0,0,15,0,50,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h40m24s327.png,10/08,14:51,Pepperoni,No,,No,Sí,Media,Alto,No,35,10,15,5,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h40m52s861.png,10/08,18:18,Extra Extra,No,,No,Sí,Aceptable,Bajo,No,35,10,20,5,10,80,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h40m59s834.png,10/08,18:19,Pepperoni,No,,No,Sí,Media,Alto,Sí,35,10,15,5,0,65,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h41m01s361.png,10/08,18:20,3 Meat Treat,No,,No,No,Aceptable,Correcto,No,35,0,20,15,10,80,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h41m05s762.png,10/8,18:21,Pepperoni,No,,No,Sí,Aceptable,Alto,No,35,10,20,5,10,80,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h41m10s142.png,10/08,18:22,3 Meat Treat,No,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h41m29s304.png,10/08,18:26,Otra,No,,No,No,Mala,Bajo,No,35,0,5,5,10,55,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h41m57s888.png,10/08,18:52,3 Meat Treat,No,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h42m02s788.png,10/08,18:53,LTO,No,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h42m33s890.png,10/08,19:05,Pepperoni,No,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h42m38s950.png,10/08,19:08,Pepperoni,No,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h42m43s970.png,10/08,19:09,Pepperoni,No,,No,Sí,Media,Bajo,No,35,10,15,5,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h42m52s509.png,10/08,19:09,Otra,No,,No,No,Media,Correcto,No,35,0,15,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h43m18s299.png,10/08,19:14,Otra,No,,No,Sí,Mala,Correcto,No,35,10,5,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h43m30s505.png,10/08,19:22,Pepperoni,No,,No,Sí,Aceptable,Insuficiente,No,35,10,20,0,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h43m40s306.png,10/08,19:23,Pepperoni,No,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h43m43s542.png,10/08,19:24,Pepperoni,No,,No,Sí,Mala,Correcto,Sí,35,10,5,15,0,65,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h43m52s312.png,10/8,19:24,Pepperoni,No,,No,Sí,Deficiente,Correcto,No,35,10,0,15,10,70,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h44m10s435.png,10/8,19:34,Otra,Sí,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h44m18s102.png,10/08,19:36,Queso,Sí,,No,Sí,Correcta,Correcto,No,35,10,30,15,10,100,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h44m25s578.png,10/08,19:38,Otra,No,,No,No,Media,Correcto,No,35,0,15,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h44m30s975.png,10/08,19:38,Pepperoni,Sí,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h44m44s448.png,10/8,19:44,Pepperoni,Sí,,No,Sí,Mala,Correcto,No,35,10,5,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h44m51s860.png,10/08,19:46,Otra,Sí,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h45m04s199.png,10/08,20:08,3 Meat Treat,No,,No,No,Media,Correcto,No,35,0,15,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h45m10s495.png,10/08,20:09,Pepperoni,No,,No,No,Media,Correcto,Sí,35,0,15,15,0,65,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h45m17s952.png,10/08,20:11,Pepperoni,No,,No,No,Deficiente,Correcto,No,35,0,0,15,10,60,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h45m19s937.png,10/08,20:11,Otra,No,,No,No,Aceptable,Bajo,No,35,0,20,5,10,70,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h45m25s211.png,10/08,20:13,Pepperoni,No,,No,No,Deficiente,Correcto,No,35,0,0,15,10,60,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h45m39s312.png,10/08,20:20,LTO,Sí,,Sí,Sí,Deficiente,Correcto,No,0,10,0,15,10,35,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h45m41s289.png,10/08,20:21,Pepperoni,No,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h45m44s915.png,10/08,20:22,Pepperoni,No,,Sí,No,Deficiente,Correcto,No,0,0,0,15,10,25,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h45m48s077.png,10/08,20:23,LTO,No,,No,No,Aceptable,Correcto,No,35,0,20,15,10,80,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h45m54s234.png,10/08,20:26,Pepperoni,No,,No,Sí,Deficiente,Bajo,Sí,35,10,0,5,0,50,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h46m24s615.png,10/08,20:27,Pepperoni,Sí,,No,Sí,Mala,Correcto,No,35,10,5,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h46m29s796.png,10/08,20:28,Pepperoni,No,,No,Sí,Mala,Correcto,Sí,35,10,5,15,0,65,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h46m35s099.png,10/08,20:29,Pepperoni,No,,No,Sí,Deficiente,Correcto,No,35,10,0,15,10,70,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h46m40s535.png,10/08,20:30,Extra Extra,No,,Sí,Sí,Media,Correcto,No,0,10,15,15,10,50,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h47m10s641.png,10/08,20:36,Pepperoni,No,,No,No,Deficiente,Correcto,No,35,0,0,15,10,60,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h47m21s867.png,10/08,20:38,Pepperoni,No,,Sí,No,Deficiente,Correcto,Sí,0,0,0,15,0,15,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h47m29s050.png,10/08,20:44,3 Meat Treat,No,,No,No,Mala,Alto,No,35,0,5,5,10,55,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h47m34s404.png,10/08,20:45,3 Meat Treat,Sí,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h47m39s629.png,10/08,20:46,Queso,No,,No,Sí,Correcta,Correcto,No,35,10,30,15,10,100,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h47m41s513.png,10/08,20:46,Pepperoni,No,,No,No,Mala,Correcto,No,35,0,5,15,10,65,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h47m50s719.png,10/08,20:50,Queso,No,,No,No,Media,Correcto,No,35,0,15,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h47m56s269.png,10/08,20:51,Queso,No,,No,No,Media,Correcto,No,35,0,15,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h48m01s617.png,10/08,20:54,Otra,No,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-08/vlcsnap-2025-10-08-21h48m23s552.png,10/08,21:02,Pepperoni,No,,No,No,Deficiente,Correcto,Sí,35,0,0,15,0,50,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-10-06h39m15s471.png,10/09,12:02,Otra,No,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-10-06h40m25s147.png,10/09,12:46,Queso,No,,No,No,Media,Correcto,No,35,0,15,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-10-06h40m38s995.png,10/09,12:49,Pepperoni,Sí,,No,Sí,Deficiente,Correcto,No,35,10,0,15,10,70,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-10-06h40m53s216.png,10/09,12:57,Otra,Sí,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-10-06h41m25s936.png,10/09,13:09,Otra,Sí,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-10-06h41m31s996.png,10/09,13:12,Pepperoni,No,,Sí,Sí,Media,Correcto,No,0,10,15,15,10,50,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-10-06h42m06s475.png,10/09,13:32,Pepperoni,No,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-10-06h43m58s346.png,10/09,14:16,Pepperoni,No,,Sí,Sí,Media,Correcto,Sí,0,10,15,15,0,40,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-10-06h44m33s054.png,10/09,14:23,Pepperoni,No,,No,Sí,Deficiente,Correcto,No,35,10,0,15,10,70,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-10-06h44m39s963.png,10/09,14:27,Queso,No,,No,No,Media,Correcto,No,35,0,15,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-10-06h44m50s672.png,10/09,14:32,Pepperoni,No,,No,Sí,Mala,Bajo,No,35,10,5,5,10,65,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-10-06h45m45s086.png,10/09,14:43,3 Meat Treat,Sí,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-10-06h45m53s715.png,10/09,14:46,3 Meat Treat,No,,No,Sí,Mala,Correcto,No,35,10,5,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-10-06h46m44s018.png,10/09,18:04,Pepperoni,No,,No,Sí,Aceptable,Correcto,Sí,35,10,20,15,0,80,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-10-06h49m17s766.png,10/09,18:58,Otra,No,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-10-06h49m24s651.png,10/09,19:00,Extra Extra,No,,No,No,Media,Correcto,No,35,0,15,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-10-06h50m25s568.png,10/09,19:30,Pepperoni,Sí,,No,Sí,Deficiente,Correcto,No,35,10,0,15,10,70,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-10-06h51m01s204.png,10/09,19:41,Pepperoni,No,,No,Sí,Correcta,Alto,No,35,10,30,5,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-10-06h51m05s506.png,10/09,19:43,3 Meat Treat,No,,Sí,No,Mala,Correcto,No,0,0,5,15,10,30,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-10-06h51m17s751.png,10/09,19:47,Pepperoni,No,,No,No,Deficiente,Correcto,No,35,0,0,15,10,60,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-10-06h51m28s819.png,10/09,19:54,3 Meat Treat,No,,Sí,No,Mala,Correcto,No,0,0,5,15,10,30,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-10-06h51m48s604.png,10/09,20:11,Pepperoni,Sí,,No,Sí,Deficiente,Correcto,No,35,10,0,15,10,70,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-10-06h51m56s921.png,10/09,20:14,Pepperoni,Sí,,Sí,Sí,Deficiente,Correcto,No,0,10,0,15,10,35,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-10-06h52m11s820.png,10/09,20:19,LTO,No,,No,No,Mala,Correcto,No,35,0,5,15,10,65,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-10-06h52m45s101.png,10/09,20:36,Queso,No,,Sí,Sí,Media,Correcto,No,0,10,15,15,10,50,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h33m55s710.png,10/10,12:03,Pepperoni,No,,Sí,No,Deficiente,Correcto,Sí,0,0,0,15,0,15,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h34m07s965.png,10/10,12:37,Pepperoni,Sí,,No,Sí,Deficiente,Correcto,No,35,10,0,15,10,70,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h35m22s436.png,10/10,12:37,Otra,No,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h36m11s291.png,10/10,12:48,Pepperoni,No,,No,No,Deficiente,Correcto,No,35,0,0,15,10,60,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h36m17s782.png,10/10,12:43,Pepperoni,No,,No,Sí,Mala,Correcto,No,35,10,5,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h36m25s938.png,10/10,12:45,Pepperoni,No,,No,Sí,Mala,Correcto,No,35,10,5,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h36m30s644.png,10/10,12:46,Pepperoni,No,,No,Sí,Mala,Correcto,No,35,10,5,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h37m08s504.png,10/10,12:48,Pepperoni,No,,No,No,Mala,Correcto,No,35,0,5,15,10,65,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h37m21s864.png,10/10,12:53,3 Meat Treat,No,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h37m43s076.png,10/10,12:59,Pepperoni,No,,Sí,Sí,Mala,Correcto,No,0,10,5,15,10,40,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h37m47s444.png,10/10,13:00,Pepperoni,No,,Sí,No,Deficiente,Correcto,No,0,0,0,15,10,25,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h37m54s437.png,10/10,13:01,Pepperoni,No,,Sí,No,Deficiente,Correcto,No,0,0,0,15,10,25,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h38m28s948.png,10/10,13:03,Otra,No,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h39m14s078.png,10/10,13:09,Pepperoni,No,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h40m47s711.png,10/10,13:23,Extra Extra,No,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h41m18s056.png,10/10,13:26,Pepperoni,No,,Sí,Sí,Deficiente,Correcto,No,0,10,0,15,10,35,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h41m21s109.png,10/10,13:27,Pepperoni,No,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h41m49s426.png,10/10,13:29,LTO,No,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h42m17s110.png,10/10,13:37,Pepperoni,Sí,,No,Sí,Deficiente,Correcto,No,35,10,0,15,10,70,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h42m26s322.png,10/10,13:43,Queso,No,,Sí,Sí,Correcta,Correcto,No,0,10,30,15,10,65,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h42m37s866.png,10/10,13:55,Pepperoni,No,,No,Sí,Aceptable,Alto,No,35,10,20,5,10,80,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h42m55s052.png,10/10,13:58,Pepperoni,No,,No,Sí,Media,Correcto,Sí,35,10,15,15,0,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h43m02s637.png,10/10,14:04,LTO,No,,No,No,Aceptable,Correcto,No,35,0,20,15,10,80,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h43m43s160.png,10/10,14:09,Pepperoni,No,,No,No,Media,Correcto,No,35,0,15,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h43m58s068.png,10/10,14:16,Pepperoni,No,,No,No,Aceptable,Correcto,No,35,0,20,15,10,80,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h44m52s614.png,10/10,14:30,Pepperoni,No,,Sí,No,Deficiente,Excesivo,No,0,0,0,0,10,10,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h45m11s104.png,10/10,14:37,3 Meat Treat,No,,No,No,Media,Correcto,No,35,0,15,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h45m26s985.png,10/10,14:42,Pepperoni,No,,No,No,Deficiente,Correcto,Sí,35,0,0,15,0,50,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h45m43s510.png,10/10,14:50,Pepperoni,No,,No,Sí,Mala,Correcto,No,35,10,5,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h45m49s181.png,10/10,14:53,Pepperoni,No,,No,Sí,Deficiente,Bajo,Sí,35,10,0,5,0,50,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h45m56s280.png,10/10,14:54,Pepperoni,No,,Sí,Sí,Mala,Correcto,Sí,0,10,5,15,0,30,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h46m10s915.png,10/10,14:58,3 Meat Treat,Sí,,No,Sí,Mala,Correcto,No,35,10,5,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h46m47s844.png,10/10,18:12,Pepperoni,No,,No,Sí,Deficiente,Correcto,Sí,35,10,0,15,0,60,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h46m50s091.png,10/10,18:13,Pepperoni,No,,No,Sí,Mala,Correcto,No,35,10,5,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h47m36s871.png,10/10,18:24,Pepperoni,Sí,,Sí,Sí,Mala,Correcto,No,0,10,5,15,10,40,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h47m50s482.png,10/10,18:26,Queso,No,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h48m31s362.png,10/10,18:38,Pepperoni,No,,No,Sí,Media,Bajo,No,35,10,15,5,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h48m37s460.png,10/10,18:38,Pepperoni,No,,No,Sí,Media,Correcto,Sí,35,10,15,15,0,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h48m53s430.png,10/10,18:42,Pepperoni,No,,No,Sí,Mala,Correcto,No,35,10,5,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h49m22s659.png,10/10,18:52,Otra,Sí,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h50m22s487.png,10/10,19:30,Pepperoni,No,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h50m26s840.png,10/10,19:31,LTO,No,,No,Sí,Aceptable,Alto,No,35,10,20,5,10,80,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h50m41s777.png,10/10,19:38,Pepperoni,Sí,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h51m07s835.png,10/10,19:45,Pepperoni,Sí,,No,Sí,Mala,Correcto,No,35,10,5,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h51m13s522.png,10/10,19:48,Pepperoni,No,,No,No,Deficiente,Correcto,Sí,35,0,0,15,0,50,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h51m18s571.png,10/10,19:50,Pepperoni,No,,No,Sí,Media,Correcto,Sí,35,10,15,15,0,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h51m25s863.png,10/10,19:52,LTO,No,,No,No,Aceptable,Correcto,No,35,0,20,15,10,80,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h51m52s340.png,10/10,20:06,Pepperoni,Sí,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h52m14s877.png,10/10,20:40,Pepperoni,No,,Sí,Sí,Correcta,Alto,No,0,10,30,5,10,55,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h52m58s560.png,10/10,20:52,Pepperoni,No,,No,Sí,Media,Bajo,No,35,10,15,5,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-11/vlcsnap-2025-10-11-06h53m27s975.png,10/10,21:00,Extra Extra,No,,No,Sí,Correcta,Correcto,No,35,10,30,15,10,100,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-11-21h27m55s221.png,10/11,12:19,Pepperoni,No,,No,Sí,Deficiente,Correcto,Sí,35,10,0,15,0,60,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-11-21h28m09s033.png,10/11,12:20,Pepperoni,No,,No,No,Aceptable,Correcto,No,35,0,20,15,10,80,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-11-21h28m16s724.png,10/11,12:21,Pepperoni,No,,No,No,Aceptable,Correcto,No,35,0,20,15,10,80,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-11-21h28m45s347.png,10/11,12:41,Pepperoni,No,,No,Sí,Mala,Correcto,No,35,10,5,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-11-21h28m56s646.png,10/11,12:43,Pepperoni,No,,No,Sí,Mala,Correcto,No,35,10,5,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-11-21h29m11s742.png,10/11,12:46,Pepperoni,Sí,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-11-21h32m37s900.png,10/11,13:01,Otra,No,,No,Sí,Media,Bajo,No,35,10,15,5,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-11-21h32m55s684.png,10/11,13:03,Pepperoni,No,,No,Sí,Deficiente,Correcto,No,35,10,0,15,10,70,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-11-21h33m08s441.png,10/11,13:06,Extra Extra,No,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-11-21h33m31s066.png,10/11,13:11,Otra,Sí,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-11-21h33m44s493.png,10/11,13:13,Queso,Sí,,No,Sí,Mala,Correcto,No,35,10,5,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-11-21h34m01s191.png,10/11,13:14,Otra,No,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-11-21h34m43s385.png,10/11,13:26,Pepperoni,No,,No,Sí,Media,Correcto,Sí,35,10,15,15,0,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-11-21h36m29s684.png,10/11,13:59,Queso,No,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-11-21h38m20s922.png,10/11,14:23,Otra,No,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-11-21h39m16s126.png,10/11,14:42,Pepperoni,No,,No,Sí,Aceptable,Bajo,No,35,10,20,5,10,80,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-11-21h39m29s840.png,10/11,14:45,Pepperoni,No,,No,No,Mala,Correcto,Sí,35,0,5,15,0,55,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-11-21h44m58s250.png,10/11,18:07,Pepperoni,No,,Sí,No,Deficiente,Bajo,Sí,0,0,0,5,0,5,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-11-21h45m37s582.png,10/11,18:18,LTO,No,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-11-21h46m13s817.png,10/11,18:41,Pepperoni,No,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-11-21h46m44s781.png,10/11,18:51,LTO,No,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-11-21h47m00s641.png,10/11,18:55,Otra,No,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-11-21h48m05s452.png,10/11,19:00,Extra Extra,No,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-11-21h49m15s855.png,10/11,19:12,3 Meat Treat,Sí,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-11-21h50m09s146.png,10/11,19:23,Pepperoni,No,,No,Sí,Media,Correcto,Sí,35,10,15,15,0,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-11-21h50m26s100.png,10/11,19:26,Queso,No,,No,No,Media,Correcto,No,35,0,15,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-11-21h50m36s322.png,10/11,19:27,Pepperoni,No,,No,Sí,Mala,Correcto,No,35,10,5,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-11-21h50m51s963.png,10/11,19:32,Pepperoni,No,,No,Sí,Mala,Correcto,No,35,10,5,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-11-21h51m38s452.png,10/11,20:00,LTO,No,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-11-21h51m44s560.png,10/11,20:01,3 Meat Treat,Sí,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-11-21h52m17s543.png,10/11,20:19,Pepperoni,Sí,,No,Sí,Aceptable,Correcto,Sí,35,10,20,15,0,80,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-11-21h52m39s341.png,10/11,20:23,Otra,No,,No,Sí,Media,Bajo,No,35,10,15,5,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-11-21h53m22s147.png,10/11,20:41,3 Meat Treat,No,,No,Sí,Media,Alto,No,35,10,15,5,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-11-21h53m35s208.png,10/11,20:46,Pepperoni,Sí,,No,Sí,Aceptable,Alto,No,35,10,20,5,10,80,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-11-21h54m19s556.png,10/11,20:57,Pepperoni,No,,No,Sí,Media,Correcto,Sí,35,10,15,15,0,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-11-21h54m23s551.png,10/11,20:57,Pepperoni,No,,No,No,Mala,Correcto,No,35,0,5,15,10,65,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h21m17s898.png,10/12,12:08,Otra,No,,No,Sí,Aceptable,Bajo,No,35,10,20,5,10,80,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h21m37s760.png,10/12,12:12,Pepperoni,No,,No,Sí,Media,Bajo,No,35,10,15,5,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h22m01s043.png,10/12,12:15,Pepperoni,No,,No,Sí,Media,Correcto,Sí,35,10,15,15,0,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h34m57s672.png,10/12,12:23,Pepperoni,Sí,,No,Sí,Deficiente,Correcto,No,35,10,0,15,10,70,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h36m20s699.png,10/12,12:51,Otra,No,,No,Sí,Aceptable,Bajo,No,35,10,20,5,10,80,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h36m41s781.png,10/12,12:53,Otra,No,,No,Sí,Aceptable,Bajo,No,35,10,20,5,10,80,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h39m26s476.png,10/12,12:55,Extra Extra,No,,No,Sí,Media,Correcto,Sí,35,10,15,15,0,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h39m33s768.png,10/12,12:57,Pepperoni,Sí,,No,Sí,Mala,Correcto,Sí,35,10,5,15,0,65,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h41m06s080.png,10/12,13:08,3 Meat Treat,No,,No,Sí,Aceptable,Insuficiente,No,35,10,20,0,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h41m59s766.png,10/12,13:14,Pepperoni,No,,No,Sí,Aceptable,Bajo,No,35,10,20,5,10,80,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h42m23s157.png,10/12,13:38,Pepperoni,Sí,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h42m48s181.png,10/12,13:43,Pepperoni,No,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h43m16s970.png,10/12,13:52,3 Meat Treat,Sí,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h43m26s171.png,10/12,13:55,Pepperoni,Sí,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h44m13s867.png,10/12,14:04,Pepperoni,No,,No,Sí,Mala,Correcto,No,35,10,5,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h44m23s124.png,10/12,14:06,Pepperoni,No,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h44m44s736.png,10/12,18:05,Pepperoni,Sí,,No,No,Mala,Correcto,No,35,0,5,15,10,65,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h45m00s958.png,10/12,18:11,LTO,No,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h45m23s328.png,10/12,18:15,LTO,No,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h45m37s202.png,10/12,18:18,Pepperoni,No,,Sí,No,Deficiente,Correcto,No,0,0,0,15,10,25,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h46m08s067.png,10/12,18:26,Otra,No,,No,Sí,Correcta,Correcto,No,35,10,30,15,10,100,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h46m27s332.png,10/12,18:29,Pepperoni,Sí,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h46m36s574.png,10/12,18:32,Pepperoni,No,,Sí,Sí,Deficiente,Correcto,Sí,0,10,0,15,0,25,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h47m07s367.png,10/12,18:36,Otra,No,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h47m19s363.png,10/12,18:39,Pepperoni,No,,No,Sí,Mala,Correcto,Sí,35,10,5,15,0,65,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h47m34s307.png,10/12,18:43,Pepperoni,No,,No,Sí,Media,Alto,No,35,10,15,5,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h48m01s924.png,10/12,18:46,Pepperoni,Sí,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h48m16s020.png,10/12,18:49,Queso,No,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h48m51s924.png,10/12,19:08,Pepperoni,No,,No,Sí,Media,Correcto,Sí,35,10,15,15,0,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h49m13s078.png,10/12,19:11,Pepperoni,Sí,,No,Sí,Deficiente,Correcto,No,35,10,0,15,10,70,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h49m26s378.png,10/12,19:17,Pepperoni,No,,No,No,Deficiente,Alto,No,35,0,0,5,10,50,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h49m44s638.png,10/12,19:19,Queso,No,,No,No,Correcta,Alto,No,35,0,30,5,10,80,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h50m01s337.png,10/12,19:23,Pepperoni,No,,Sí,Sí,Media,Correcto,Sí,0,10,15,15,0,40,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h50m19s889.png,10/12,19:28,3 Meat Treat,No,,No,No,Media,Correcto,No,35,0,15,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h50m26s529.png,10/12,19:30,Pepperoni,No,,No,No,Media,Correcto,No,35,0,15,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h50m40s866.png,10/12,19:36,Otra,No,,No,No,Media,Correcto,No,35,0,15,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h51m04s174.png,10/12,19:45,Pepperoni,Sí,,No,Sí,Mala,Correcto,No,35,10,5,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h52m07s498.png,10/12,20:10,Pepperoni,No,,Sí,Sí,Mala,Correcto,Sí,0,10,5,15,0,30,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h52m13s998.png,10/12,20:11,3 Meat Treat,Sí,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h52m19s894.png,10/12,20:11,Queso,No,,No,No,Aceptable,Correcto,No,35,0,20,15,10,80,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h52m29s659.png,10/12,20:15,Pepperoni,No,,No,Sí,Deficiente,Correcto,Sí,35,10,0,15,0,60,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h52m46s622.png,10/12,20:18,Pepperoni,No,,No,No,Deficiente,Correcto,No,35,0,0,15,10,60,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h52m55s077.png,10/12,20:21,Pepperoni,No,,No,No,Media,Correcto,No,35,0,15,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h53m13s209.png,10/12,20:30,Pepperoni,No,,No,No,Mala,Correcto,No,35,0,5,15,10,65,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h53m55s235.png,10/12,20:39,Pepperoni,No,,No,No,Mala,Correcto,No,35,0,5,15,10,65,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h54m21s649.png,10/12,20:49,Pepperoni,No,,No,No,Mala,Correcto,No,35,0,5,15,10,65,Fail
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h54m46s855.png,10/12,20:53,LTO,No,,No,Sí,Aceptable,Correcto,No,35,10,20,15,10,90,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h54m56s238.png,10/12,20:56,Pepperoni,No,,No,Sí,Media,Correcto,No,35,10,15,15,10,85,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h55m29s752.png,10/12,21:00,Pepperoni,No,,No,Sí,Mala,Correcto,No,35,10,5,15,10,75,Pass
+https://gritsee-ensemble.s3.us-east-1.amazonaws.com/pcsapi-cumbres/quality/2025-10-12/vlcsnap-2025-10-12-21h55m37s409.png,10/12,21:04,Pepperoni,No,,No,Sí,Mala,Correcto,No,35,10,5,15,10,75,Pass
