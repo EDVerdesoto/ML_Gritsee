@@ -7,8 +7,8 @@ from pathlib import Path
 from tqdm import tqdm
 
 # Configuracion de directorios y parametros
-NPUT_DIR = Path.home() / "Practicas" / "Descarga_Pizzas"
-OUTPUT_ROOT = Path.home() / "Practicas" / "Datasets_Procesados"
+INPUT_DIR = Path.home() / "Practicas" / "Descarga_Pizzas"
+OUTPUT_ROOT = Path.home() / "Practicas" / "Descarga_Pizzas" / "00_Datasets_Procesados"
 OUTPUT_YOLO = OUTPUT_ROOT / "Detection_Unique_640"       # Para LabelImg / YOLO
 OUTPUT_CLS = OUTPUT_ROOT / "Classification_ResNet_640"
 
@@ -47,11 +47,12 @@ def resize_letterbox(img, new_shape=(640, 640), color=(0, 0, 0)):
 
 def procesar_para_deteccion_yolo():
     # Modulo 1: Extraer imagenes unicas para dataset YOLO
+    INPUT_YOLO = INPUT_DIR / "bordes"
     if not OUTPUT_YOLO.exists():
         OUTPUT_YOLO.mkdir(parents=True, exist_ok=True)
     
     hashes_vistos = set()
-    archivos = [p for p in INPUT_DIR.rglob("*") if p.suffix.lower() in VALID_EXT]
+    archivos = [p for p in INPUT_YOLO.rglob("*") if p.suffix.lower() in VALID_EXT]
     
     print(f"Procesando {len(archivos)} archivos para dataset YOLO (unicos)...")
     
@@ -72,9 +73,25 @@ def procesar_para_deteccion_yolo():
 
 def procesar_para_clasificacion_resnet():
     # Modulo 2: Replicar estructura y redimensionar para dataset Clasificacion
-    archivos = [p for p in INPUT_DIR.rglob("*") if p.suffix.lower() in VALID_EXT]
+    # Procesa todas las carpetas, pero si existe version "_balanced", usa esa en lugar de la original
+    all_dirs = [d for d in INPUT_DIR.iterdir() if d.is_dir()]
     
-    print(f"Procesando {len(archivos)} archivos para dataset Clasificacion...")
+    # Filtrar: si existe "carpeta_balanced", excluir "carpeta"
+    dirs_to_process = []
+    for d in all_dirs:
+        if d.name.endswith("_balanced"):
+            dirs_to_process.append(d)
+        else:
+            # Solo agregar si no existe su version _balanced
+            balanced_version = INPUT_DIR / f"{d.name}_balanced"
+            if not balanced_version.exists():
+                dirs_to_process.append(d)
+    
+    archivos = []
+    for dir_path in dirs_to_process:
+        archivos.extend([p for p in dir_path.rglob("*") if p.suffix.lower() in VALID_EXT])
+    
+    print(f"Procesando {len(archivos)} archivos de {len(dirs_to_process)} carpetas para dataset Clasificacion...")
     
     for archivo in tqdm(archivos, desc="Transformando imagenes"):
         rel_path = archivo.relative_to(INPUT_DIR)
