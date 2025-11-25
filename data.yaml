@@ -1,0 +1,9 @@
+# Pon un punto '.' para decir "desde aquí donde estoy parado"
+path: .  
+
+# Rutas relativas a la carpeta PRACTICAS
+train: dataset_yolo_final/train/images
+val: dataset_yolo_final/val/images
+
+nc: 1
+names: ['pizza']

@@ -15,14 +15,14 @@ def predecir_pizza(imagen_path):
     Predice todos los atributos de una imagen de pizza.
     """
     if not Path(imagen_path).exists():
-        print(f"❌ Imagen no encontrada: {imagen_path}")
+        print(f"Imagen no encontrada: {imagen_path}")
         return None
     
     clasificadores = ['burbujas', 'bordes', 'distribucion', 'horneado', 'grasa']
     modelos_dir = YOLO_DIR / "runs"
     
     print("\n" + "="*70)
-    print(f"🍕 ANÁLISIS DE PIZZA: {Path(imagen_path).name}")
+    print(f"ANÁLISIS DE PIZZA: {Path(imagen_path).name}")
     print("="*70 + "\n")
     
     predicciones = {}
@@ -31,7 +31,7 @@ def predecir_pizza(imagen_path):
         model_path = modelos_dir / nombre / "weights" / "best.pt"
         
         if not model_path.exists():
-            print(f"  ⚠️  Modelo {nombre} no encontrado en: {model_path}")
+            print(f" Modelo {nombre} no encontrado en: {model_path}")
             continue
         
         # Cargar modelo
@@ -86,13 +86,13 @@ def predecir_pizza(imagen_path):
     calidad_general = (score / max_score) * 100
     
     if calidad_general >= 80:
-        print(f"🌟 PIZZA DE ALTA CALIDAD ({calidad_general:.1f}/100)")
+        print(f"PIZZA DE ALTA CALIDAD ({calidad_general:.1f}/100)")
     elif calidad_general >= 60:
-        print(f"✅ PIZZA ACEPTABLE ({calidad_general:.1f}/100)")
+        print(f"PIZZA ACEPTABLE ({calidad_general:.1f}/100)")
     elif calidad_general >= 40:
-        print(f"⚠️  PIZZA CON DEFECTOS ({calidad_general:.1f}/100)")
+        print(f"PIZZA CON DEFECTOS ({calidad_general:.1f}/100)")
     else:
-        print(f"❌ PIZZA DEFICIENTE ({calidad_general:.1f}/100)")
+        print(f"PIZZA DEFICIENTE ({calidad_general:.1f}/100)")
     
     print()
     
@@ -105,7 +105,7 @@ def predecir_batch(directorio):
     directorio = Path(directorio)
     
     if not directorio.exists():
-        print(f"❌ Directorio no encontrado: {directorio}")
+        print(f"Directorio no encontrado: {directorio}")
         return
     
     imagenes = list(directorio.glob("*.png")) + \
@@ -113,10 +113,10 @@ def predecir_batch(directorio):
                list(directorio.glob("*.jpeg"))
     
     if not imagenes:
-        print(f"❌ No se encontraron imágenes en: {directorio}")
+        print(f"No se encontraron imágenes en: {directorio}")
         return
     
-    print(f"\n📁 Procesando {len(imagenes)} imágenes de: {directorio}\n")
+    print(f"\nProcesando {len(imagenes)} imágenes de: {directorio}\n")
     
     resultados = []
     
@@ -168,7 +168,7 @@ def main():
     elif ruta.is_file():
         predecir_pizza(str(ruta))
     else:
-        print(f"❌ Ruta no válida: {ruta}")
+        print(f"Ruta no válida: {ruta}")
         sys.exit(1)
 
 if __name__ == "__main__":
