@@ -2,11 +2,6 @@ import cv2
 import os
 import glob
 
-
-### NO OLVIDAR INSTALAR OPENCV: pip install opencv-python
-
-
-
 # --- CONFIGURACIÓN ---
 # Apunta a tu carpeta de TRAIN recién creada
 IMG_DIR = r'C:\Practicas_YOLO\dataset_yolo_final\train\images'

@@ -1,8 +1,4 @@
 # Ignorar estas carpetas
-Descarga_Pizzas/
-Documentación/
-Img_entrenamiento/
-*.jpg
-*.jpeg
-*.png
-*.txt
+datasets/
+runs/
+
