@@ -3,9 +3,24 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.db.session import engine, Base
 from app.models import inspeccion  # Importante: Importar los modelos para que SQLAlchemy los vea
 from app.api.v1.endpoints import inspeccion_endpoints
+from contextlib import asynccontextmanager
+from app.core.model_loader import model_manager
+
 # --- CREACIÓN DE TABLAS ---
 # Si las tablas no existen, se crean basándose en los modelos definidos
 Base.metadata.create_all(bind=engine)
+
+# --- CICLO DE VIDA (LIFESPAN) ---
+# Esta es la solución al error de Windows.
+# Los modelos se cargarán SOLO UNA VEZ cuando el servidor arranque.
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # 1. Al arrancar:
+    print("Iniciando servidor y cargando modelos de IA")
+    model_manager.load_models() # <--- AQUÍ CARGAMOS LOS MODELOS
+    yield
+    # 2. Al apagar:
+    print("Apagando servidor")
 
 # --- CONFIGURACIÓN DE LA API ---
 app = FastAPI(

@@ -37,3 +37,10 @@ class InspeccionResponse(InspeccionCreate):
 
     class Config:
         from_attributes = True # Antes se llamaba orm_mode
+
+class InspeccionUpdate(BaseModel):
+    tiene_burbujas: Optional[bool] = None
+    bordes_sucios: Optional[bool] = None
+    tiene_grasa: Optional[bool] = None
+    horneado_clase: Optional[str] = None
+    distribucion_clase: Optional[str] = None

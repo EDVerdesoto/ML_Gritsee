@@ -24,7 +24,7 @@ def calcular_puntaje(datos):
     # 3. Distribución (Escala variable)
     dist = datos['distribucion'].upper() # Asegurar mayúsculas
     mapa_distribucion = {
-        "CORRECTA": 30,
+        "CORRECTO": 30,
         "ACEPTABLE": 20,
         "MEDIA": 15,
         "MALA": 5,

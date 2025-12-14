@@ -4,11 +4,14 @@ from torchvision import models
 import torch.nn as nn
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent.parent.parent # Raíz
+BASE_DIR = Path(__file__).resolve().parent.parent.parent.parent # Raíz
 MODEL_DIR = BASE_DIR / "modelos"
 
 class ModelManager:
-    def __inti__(self):
+    def __init__(self):
+        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        print(f"Dispositivo seleccionado para modelos: {self.device}")
+
         # Inicializar variables vacías
         self.yolo = None
         self.resnet_horneado = None
@@ -17,7 +20,6 @@ class ModelManager:
         self.resnet_burbujas = None
         self.resnet_grasa = None
         # Deteccion de GPU o CPU
-        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     # se usa self para referirse a la instancia actual de la clase
     def load_models(self):
@@ -48,15 +50,25 @@ class ModelManager:
         self.resnet_distribucion = self._load_resnet_custom("resnet_distribucion", 5)
     
     def _load_resnet_custom(self, folder_name, num_classes):
-        # Buscamos cualquier archivo .pth dentro de la carpeta del modelo
+        # Buscamos el archivo finetuned (el mejor) o best.pth
         model_path = MODEL_DIR / folder_name
-        weights = list(model_path.glob("*.pth"))
         
-        if not weights:
+        # Prioridad: finetuned > best > cualquier otro
+        finetuned = list(model_path.glob("*finetuned*.pth")) + list(model_path.glob("*FINETUNED*.pth"))
+        best = list(model_path.glob("*best*.pth"))
+        all_weights = list(model_path.glob("*.pth"))
+        
+        if finetuned:
+            weight_file = finetuned[0]
+        elif best:
+            weight_file = best[0]
+        elif all_weights:
+            weight_file = all_weights[0]
+        else:
             print(f"No encontré pesos .pth en {folder_name}")
             return None
         
-        best_weight = weights[0] # Tomamos el primero que encuentre (o el best.pth)
+        print(f">>>> Cargando: {weight_file.name}")
         
         try:
             # Reconstruir arquitectura
@@ -64,10 +76,12 @@ class ModelManager:
             model.fc = nn.Linear(model.fc.in_features, num_classes)
             
             # Cargar pesos
-            model.load_state_dict(torch.load(best_weight, map_location=self.device))
+            state_dict = torch.load(weight_file, map_location=self.device)
+            model.load_state_dict(state_dict)
             model.to(self.device)
             model.eval() # Modo evaluación (apaga dropout, etc)
-            print(f"{folder_name} cargado correctamente.")
+            
+            print(f">>>> {folder_name} cargado ({num_classes} clases)")
             return model
         except Exception as e:
             print(f"Error cargando {folder_name}: {e}")
@@ -76,5 +90,4 @@ class ModelManager:
 # Ejecuta la línea a penas se cargue el servidor 
 model_manager = ModelManager()
 
-# cargar los modelos 
 model_manager.load_models()
