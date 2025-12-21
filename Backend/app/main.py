@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.db.session import engine, Base
 from app.models import inspeccion  # Importante: Importar los modelos para que SQLAlchemy los vea
-from app.api.v1.endpoints import inspeccion_endpoints
+from app.api.v1.endpoints import inspeccion_endpoints, dashboard_endpoints
 from contextlib import asynccontextmanager
 from app.core.model_loader import model_manager
 
@@ -69,4 +69,10 @@ app.include_router(
     inspeccion_endpoints.router,
     prefix="/api/v1/inspecciones", #control de versiones, si saco v2, solo cambio aqui
     tags=["Carga de Datos"]
+)
+
+app.include_router(
+    dashboard_endpoints.router,
+    prefix="/api/v1/dashboard",
+    tags=["Dashboard y Métricas"]
 )
