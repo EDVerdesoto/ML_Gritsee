@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import Optional
+from typing import Optional, Literal
 from datetime import datetime
 
 # --- Esquema para Resumen General ---
@@ -29,10 +29,12 @@ class ComparacionSemanal(BaseModel):
     semana_actual: ResumenGeneral
     semana_anterior: Optional[ResumenGeneral] = None
     
-    # Diferenciales (%)
+    # Diferenciales (%) - TODOS los defectos para barras de progreso del Dashboard
     diferencial_correctas: Optional[float] = None
     diferencial_promedio: Optional[float] = None
     diferencial_burbujas: Optional[float] = None
+    diferencial_grasa: Optional[float] = None           # CHECK 1: Exceso de Grasa
+    diferencial_bordes: Optional[float] = None          # CHECK 1: Bordes Sucios
     diferencial_dist_deficiente: Optional[float] = None
     diferencial_dist_mala: Optional[float] = None
 
@@ -52,6 +54,7 @@ class IncidentesPorDia(BaseModel):
     total_muestras: int
     total_incidentes: int
     porcentaje_incidentes: float
+    hora_critica: Optional[int] = None  # CHECK 2: Hora (0-23) con más fallos ese día
 
 # --- Esquema para Agrupación por Locación ---
 class ResumenPorLocacion(BaseModel):
@@ -63,6 +66,44 @@ class ResumenPorLocacion(BaseModel):
     top_horas_muestras: list[MuestrasPorHora]
     top_dias_incidentes: list[IncidentesPorDia]
 
+# --- CHECK 3: Esquema para distribución de clases (Gráficos de Donas) ---
+class DistribucionClases(BaseModel):
+    """Conteo de cada clase de distribución - SIEMPRE devuelve todas las claves"""
+    correcto: int = 0
+    aceptable: int = 0
+    media: int = 0
+    mala: int = 0
+    deficiente: int = 0
+
+class HorneadoClases(BaseModel):
+    """Conteo de cada clase de horneado - SIEMPRE devuelve todas las claves"""
+    correcto: int = 0
+    alto: int = 0
+    bajo: int = 0
+    insuficiente: int = 0
+    excesivo: int = 0
+
+# --- CHECK 6: Esquema para Tendencias Históricas ---
+class PeriodoTendencia(BaseModel):
+    """Un punto en la línea de tendencia"""
+    periodo: str              # "Semana 45", "Noviembre", "2024-W45", etc.
+    fecha_inicio: datetime
+    fecha_fin: datetime
+    total_muestras: int
+    promedio_puntaje: float
+    porcentaje_correctas: float
+    # Desglose de defectos para análisis detallado
+    porcentaje_burbujas: float
+    porcentaje_grasa: float
+    porcentaje_bordes_sucios: float
+    porcentaje_dist_deficiente: float
+    porcentaje_dist_mala: float
+
+class TendenciaHistoricaResponse(BaseModel):
+    """Respuesta de tendencias para gráficos de líneas"""
+    agrupacion: str           # "week" o "month"
+    periodos: list[PeriodoTendencia]
+
 # --- Esquema Principal (Respuesta del Endpoint) ---
 class DashboardResponse(BaseModel):
     """Respuesta completa del dashboard con todas las métricas"""
@@ -71,3 +112,8 @@ class DashboardResponse(BaseModel):
     top_5_horas_muestras: list[MuestrasPorHora]
     top_5_dias_incidentes: list[IncidentesPorDia]
     por_locacion: Optional[ResumenPorLocacion] = None
+    # CHECK 3: Distribución de clases para gráficos de donas
+    distribucion_clases: Optional[DistribucionClases] = None
+    horneado_clases: Optional[HorneadoClases] = None
+    # Período de la semana actual para mostrar en el header
+    periodo_semana: Optional[str] = None

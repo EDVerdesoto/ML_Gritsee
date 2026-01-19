@@ -1,8 +1,9 @@
 from fastapi import APIRouter, Depends, Query
 from sqlalchemy.orm import Session
+from typing import Literal
 from app.db.session import get_db
 from app.services.dashboard_service import DashboardService
-from app.schemas.dashboard_schema import DashboardResponse
+from app.schemas.dashboard_schema import DashboardResponse, TendenciaHistoricaResponse
 
 router = APIRouter()
 
@@ -84,6 +85,63 @@ def obtener_dias_incidentes(
 ):
     """
     Top N días con más incidentes (pizzas FAIL)
+    Incluye hora_critica: la hora (0-23) con más fallos ese día
     """
     service = DashboardService(db)
     return service.obtener_dias_con_mas_incidentes(top=top, locacion=locacion)
+
+
+@router.get("/top-inspecciones")
+def obtener_top_inspecciones_semana(
+    top: int = Query(10, ge=1, le=50, description="Número de inspecciones a mostrar"),
+    locacion: str = Query(None),
+    db: Session = Depends(get_db)
+):
+    """
+    Top N inspecciones de la última semana de datos, ordenadas por puntaje (desc).
+    Toma la semana basada en la última fecha registrada en la BD.
+    """
+    service = DashboardService(db)
+    return service.obtener_top_inspecciones_semana(top=top, locacion=locacion)
+
+
+# ==========================================
+# CHECK 6: ENDPOINT DE TENDENCIAS HISTÓRICAS
+# ==========================================
+@router.get("/tendencias", response_model=TendenciaHistoricaResponse)
+def obtener_tendencias_historicas(
+    group_by: Literal["week", "month"] = Query("week", description="Agrupar por 'week' o 'month'"),
+    periodos: int = Query(12, ge=1, le=52, description="Número de períodos a incluir"),
+    locacion: str = Query(None, description="Filtrar por locación"),
+    db: Session = Depends(get_db)
+):
+    """
+    CHECK 6: Tendencias históricas para gráficos de líneas.
+    
+    Devuelve una lista cronológica de períodos con métricas agregadas:
+    - promedio_puntaje: Para graficar evolución de calidad
+    - porcentaje_correctas: Tasa de éxito
+    - Desglose de defectos: burbujas, grasa, bordes, distribución
+    
+    ### Ejemplos de uso:
+    - `/api/v1/dashboard/tendencias?group_by=week&periodos=12` - Últimas 12 semanas
+    - `/api/v1/dashboard/tendencias?group_by=month&periodos=6` - Últimos 6 meses
+    - `/api/v1/dashboard/tendencias?group_by=month&locacion=Molino` - Por locación
+    
+    ### Respuesta ejemplo:
+    ```json
+    {
+        "agrupacion": "month",
+        "periodos": [
+            {"periodo": "Octubre", "promedio_puntaje": 78.5, "porcentaje_correctas": 65.2, ...},
+            {"periodo": "Noviembre", "promedio_puntaje": 82.1, "porcentaje_correctas": 71.8, ...}
+        ]
+    }
+    ```
+    """
+    service = DashboardService(db)
+    return service.obtener_tendencia_historica(
+        group_by=group_by,
+        locacion=locacion,
+        ultimos_periodos=periodos
+    )

@@ -54,8 +54,8 @@ def calcular_puntaje(datos):
     
     puntajes['total'] = total
 
-    # VEREDICTO (> 70 es PASS)
-    if total > 70:
+    # VEREDICTO (>= 75 es PASS)
+    if total >= 75:
         puntajes['veredicto'] = "PASS"
     else:
         puntajes['veredicto'] = "FAIL"

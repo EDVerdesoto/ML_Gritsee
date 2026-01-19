@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gritsee AI | Historial de Inspecciones</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/es.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'], mono: ['JetBrains Mono', 'monospace'] },
+                    colors: {
+                        slate: { 50: '#f8fafc', 100: '#f1f5f9', 200: '#e2e8f0', 800: '#1e293b', 900: '#0f172a' },
+                        gritsee: { amber: '#f59e0b', teal: '#14b8a6', indigo: '#6366f1' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .image-zoom:hover { transform: scale(2.5); z-index: 50; border-radius: 8px; box-shadow: 0 10px 25px rgba(0,0,0,0.3); }
+        .toggle-checkbox:checked { right: 0; border-color: #10b981; }
+        .toggle-checkbox:checked + .toggle-label { background-color: #10b981; }
+        
+        /* Modal Animation */
+        .modal-enter { opacity: 0; transform: scale(0.95); }
+        .modal-enter-active { opacity: 1; transform: scale(1); transition: opacity 0.2s, transform 0.2s; }
+        .modal-exit { opacity: 0; transform: scale(0.95); transition: opacity 0.2s, transform 0.2s; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 h-screen flex overflow-hidden">
+
+    <aside class="w-64 bg-white border-r border-slate-200 flex flex-col shadow-sm">
+        <div class="p-6 flex items-center gap-3">
+            <div class="w-8 h-8 bg-gritsee-amber rounded-lg flex items-center justify-center text-white font-bold shadow-lg shadow-orange-500/20">G</div>
+            <span class="text-xl font-bold tracking-tight text-slate-900">Gritsee AI</span>
+        </div>
+        <nav class="flex-1 px-4 space-y-2 mt-4">
+            <a href="dashboard_v5.html" class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:bg-slate-100 hover:text-slate-900 rounded-xl transition-colors">
+                <i data-lucide="layout-dashboard" class="w-5 h-5"></i> Dashboard
+            </a>
+            <a href="upload_light.html" class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:bg-slate-100 hover:text-slate-900 rounded-xl transition-colors">
+                <i data-lucide="upload-cloud" class="w-5 h-5"></i> Cargar Inspección
+            </a>
+            <a href="#" class="flex items-center gap-3 px-4 py-3 bg-gritsee-amber/10 text-orange-600 rounded-xl font-medium">
+                <i data-lucide="history" class="w-5 h-5"></i> Historial
+            </a>
+        </nav>
+        <div class="p-4 border-t border-slate-200">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-xs font-bold text-slate-600">AD</div>
+                <div><p class="text-sm font-medium text-slate-900">Admin Molino</p><p class="text-xs text-slate-500">Gerente</p></div>
+            </div>
+        </div>
+    </aside>
+
+    <main class="flex-1 flex flex-col relative overflow-hidden bg-slate-50">
+        
+        <header class="h-16 border-b border-slate-200 bg-white flex items-center justify-between px-8 sticky top-0 z-10">
+            <h2 class="font-semibold text-slate-700">Explorador de Datos</h2>
+            <div class="flex gap-3">
+                <button class="flex items-center gap-2 px-3 py-2 text-xs font-medium text-slate-600 bg-slate-100 rounded-lg hover:bg-slate-200">
+                    <i data-lucide="download" class="w-4 h-4"></i> Exportar CSV
+                </button>
+            </div>
+        </header>
+
+        <div class="px-8 py-4 bg-white border-b border-slate-200 flex flex-wrap gap-4 items-end shadow-sm z-0">
+            <div class="w-48">
+                <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Buscar ID</label>
+                <div class="relative">
+                    <i data-lucide="search" class="absolute left-3 top-2.5 text-slate-400 w-4 h-4"></i>
+                    <input type="text" placeholder="#INSP..." class="w-full pl-9 pr-3 py-2 bg-slate-50 border border-slate-300 rounded-lg text-sm focus:ring-2 focus:ring-gritsee-amber outline-none">
+                </div>
+            </div>
+
+            <div class="w-56">
+                <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Rango de Fechas</label>
+                <div class="relative">
+                    <i data-lucide="calendar" class="absolute left-3 top-2.5 text-slate-400 w-4 h-4"></i>
+                    <input id="dateRange" type="text" placeholder="Seleccionar..." class="w-full pl-9 pr-3 py-2 bg-slate-50 border border-slate-300 rounded-lg text-sm focus:ring-2 focus:ring-gritsee-amber outline-none cursor-pointer">
+                </div>
+            </div>
+
+            <div class="w-40">
+                <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Sucursal</label>
+                <select class="w-full px-3 py-2 bg-slate-50 border border-slate-300 rounded-lg text-sm focus:ring-2 focus:ring-gritsee-amber outline-none">
+                    <option>Todas</option>
+                    <option>Molino</option>
+                    <option>Cardenas</option>
+                </select>
+            </div>
+
+            <div class="w-40">
+                <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Estado</label>
+                <select class="w-full px-3 py-2 bg-slate-50 border border-slate-300 rounded-lg text-sm focus:ring-2 focus:ring-gritsee-amber outline-none">
+                    <option>Todos</option>
+                    <option>FAIL (Rechazadas)</option>
+                    <option>PASS (Aprobadas)</option>
+                </select>
+            </div>
+            
+            <button class="px-6 py-2 bg-slate-800 text-white text-sm font-bold rounded-lg hover:bg-slate-900 transition-colors ml-auto">
+                Filtrar
+            </button>
+        </div>
+
+        <div class="flex-1 overflow-auto p-8">
+            <div class="bg-white border border-slate-200 rounded-xl shadow-sm overflow-hidden">
+                <table class="w-full text-left border-collapse">
+                    <thead class="bg-slate-50 text-slate-500 text-xs uppercase font-semibold border-b border-slate-200">
+                        <tr>
+                            <th class="p-4 w-20 text-center">Img</th>
+                            <th class="p-4">ID / Fecha</th>
+                            <th class="p-4">Sucursal</th>
+                            <th class="p-4">Defectos Detectados</th>
+                            <th class="p-4 text-center">Score</th>
+                            <th class="p-4 text-center">Estado</th>
+                            <th class="p-4 text-right">Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100 text-sm">
+                        <tr class="hover:bg-orange-50/30 transition-colors group">
+                            <td class="p-4 text-center relative">
+                                <div class="w-12 h-10 rounded overflow-hidden border border-slate-200 cursor-zoom-in relative">
+                                    <img src="https://images.unsplash.com/photo-1590947132387-155cc02f3212?q=80&w=200" class="w-full h-full object-cover transition-transform duration-200 image-zoom">
+                                </div>
+                            </td>
+                            <td class="p-4">
+                                <div class="font-mono font-bold text-slate-700">#4521</div>
+                                <div class="text-xs text-slate-400">23 Nov - 14:30</div>
+                            </td>
+                            <td class="p-4 text-slate-600">Molino</td>
+                            <td class="p-4">
+                                <div class="flex gap-2 flex-wrap">
+                                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-red-100 text-red-600 border border-red-200">Burbujas</span>
+                                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-orange-100 text-orange-600 border border-orange-200">Horneado Bajo</span>
+                                </div>
+                            </td>
+                            <td class="p-4 text-center font-bold text-lg text-red-500">45</td>
+                            <td class="p-4 text-center">
+                                <span class="px-2 py-1 rounded-full text-xs font-bold bg-red-100 text-red-600">FAIL</span>
+                            </td>
+                            <td class="p-4 text-right">
+                                <button onclick="openModal('#4521', 45, true, true)" class="p-2 text-slate-400 hover:text-gritsee-amber hover:bg-orange-50 rounded-lg transition-colors" title="Corregir IA">
+                                    <i data-lucide="pencil" class="w-4 h-4"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr class="hover:bg-slate-50 transition-colors">
+                            <td class="p-4 text-center">
+                                <div class="w-12 h-10 rounded overflow-hidden border border-slate-200 cursor-zoom-in">
+                                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=200" class="w-full h-full object-cover transition-transform duration-200 image-zoom">
+                                </div>
+                            </td>
+                            <td class="p-4">
+                                <div class="font-mono font-bold text-slate-700">#4520</div>
+                                <div class="text-xs text-slate-400">23 Nov - 14:15</div>
+                            </td>
+                            <td class="p-4 text-slate-600">Cardenas</td>
+                            <td class="p-4">
+                                <span class="text-xs text-slate-400 italic">Ninguno</span>
+                            </td>
+                            <td class="p-4 text-center font-bold text-lg text-emerald-500">95</td>
+                            <td class="p-4 text-center">
+                                <span class="px-2 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-600">PASS</span>
+                            </td>
+                            <td class="p-4 text-right">
+                                <button onclick="alert('Esta pizza ya está perfecta')" class="p-2 text-slate-400 hover:text-indigo-600 hover:bg-indigo-50 rounded-lg transition-colors">
+                                    <i data-lucide="eye" class="w-4 h-4"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        
+                        <tr class="hover:bg-slate-50 transition-colors">
+                            <td class="p-4 text-center">
+                                <div class="w-12 h-10 rounded overflow-hidden border border-slate-200 cursor-zoom-in">
+                                    <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?q=80&w=200" class="w-full h-full object-cover transition-transform duration-200 image-zoom">
+                                </div>
+                            </td>
+                            <td class="p-4">
+                                <div class="font-mono font-bold text-slate-700">#4519</div>
+                                <div class="text-xs text-slate-400">23 Nov - 14:02</div>
+                            </td>
+                            <td class="p-4 text-slate-600">Molino</td>
+                            <td class="p-4">
+                                <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-100 text-blue-600 border border-blue-200">Dist. Regular</span>
+                            </td>
+                            <td class="p-4 text-center font-bold text-lg text-amber-500">75</td>
+                            <td class="p-4 text-center">
+                                <span class="px-2 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-600">PASS</span>
+                            </td>
+                            <td class="p-4 text-right">
+                                <button onclick="openModal('#4519', 75, false, false)" class="p-2 text-slate-400 hover:text-gritsee-amber hover:bg-orange-50 rounded-lg transition-colors">
+                                    <i data-lucide="pencil" class="w-4 h-4"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="flex justify-between items-center mt-6">
+                <span class="text-xs text-slate-500">Mostrando 1-10 de 307 resultados</span>
+                <div class="flex gap-2">
+                    <button class="px-3 py-1 border border-slate-300 rounded text-xs text-slate-500 hover:bg-slate-100">Anterior</button>
+                    <button class="px-3 py-1 border border-slate-300 rounded text-xs bg-slate-800 text-white">1</button>
+                    <button class="px-3 py-1 border border-slate-300 rounded text-xs text-slate-500 hover:bg-slate-100">2</button>
+                    <button class="px-3 py-1 border border-slate-300 rounded text-xs text-slate-500 hover:bg-slate-100">3</button>
+                    <button class="px-3 py-1 border border-slate-300 rounded text-xs text-slate-500 hover:bg-slate-100">Siguiente</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="editModal" class="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-50 hidden flex items-center justify-center">
+        <div id="modalContent" class="bg-white w-full max-w-4xl rounded-2xl shadow-2xl overflow-hidden flex transform scale-95 opacity-0 transition-all duration-300">
+            
+            <div class="w-1/2 bg-slate-900 relative flex items-center justify-center p-4">
+                <img src="https://images.unsplash.com/photo-1590947132387-155cc02f3212?q=80&w=800" class="max-h-[500px] w-auto object-contain rounded shadow-lg">
+                <div class="absolute bottom-4 left-4 bg-black/60 text-white px-3 py-1 rounded-full text-xs backdrop-blur-md">
+                    Original ID: <span class="font-mono" id="modalId">#4521</span>
+                </div>
+            </div>
+
+            <div class="w-1/2 p-8 flex flex-col">
+                <div class="flex justify-between items-start mb-6">
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-800">Corrección Humana</h3>
+                        <p class="text-sm text-slate-500">Ajusta los hallazgos de la IA.</p>
+                    </div>
+                    <button onclick="closeModal()" class="text-slate-400 hover:text-slate-600">
+                        <i data-lucide="x" class="w-6 h-6"></i>
+                    </button>
+                </div>
+
+                <div class="space-y-4 flex-1">
+                    
+                    <div class="flex items-center justify-between p-3 bg-slate-50 rounded-lg border border-slate-100">
+                        <div class="flex items-center gap-3">
+                            <div class="p-2 bg-blue-100 text-blue-600 rounded-lg"><i data-lucide="circle-dashed" class="w-4 h-4"></i></div>
+                            <div>
+                                <p class="text-sm font-bold text-slate-700">Burbujas</p>
+                                <p class="text-[10px] text-slate-400">-30 Pts</p>
+                            </div>
+                        </div>
+                        <div class="relative inline-block w-12 mr-2 align-middle select-none transition duration-200 ease-in">
+                            <input type="checkbox" name="toggle" id="toggleBurbujas" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer border-slate-300 left-0 transition-all duration-300"/>
+                            <label for="toggleBurbujas" class="toggle-label block overflow-hidden h-6 rounded-full bg-slate-300 cursor-pointer"></label>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between p-3 bg-slate-50 rounded-lg border border-slate-100">
+                        <div class="flex items-center gap-3">
+                            <div class="p-2 bg-orange-100 text-orange-600 rounded-lg"><i data-lucide="flame" class="w-4 h-4"></i></div>
+                            <div>
+                                <p class="text-sm font-bold text-slate-700">Horneado Bajo</p>
+                                <p class="text-[10px] text-slate-400">-20 Pts</p>
+                            </div>
+                        </div>
+                        <div class="relative inline-block w-12 mr-2 align-middle select-none transition duration-200 ease-in">
+                            <input type="checkbox" name="toggle" id="toggleHorno" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer border-slate-300 left-0 transition-all duration-300"/>
+                            <label for="toggleHorno" class="toggle-label block overflow-hidden h-6 rounded-full bg-slate-300 cursor-pointer"></label>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 p-3 bg-indigo-50 border border-indigo-100 rounded-lg text-xs text-indigo-700 flex gap-2">
+                        <i data-lucide="sparkles" class="w-4 h-4 flex-shrink-0"></i>
+                        <p>El sistema recalcula el puntaje automáticamente al modificar estos valores.</p>
+                    </div>
+
+                </div>
+
+                <div class="mt-6 pt-6 border-t border-slate-100 flex items-center justify-between">
+                    <div>
+                        <p class="text-xs text-slate-400 uppercase font-bold">Nuevo Score</p>
+                        <p class="text-3xl font-bold text-slate-800 transition-all duration-300" id="liveScore">45</p>
+                    </div>
+                    <button onclick="saveChanges()" class="px-6 py-3 bg-gritsee-amber text-white font-bold rounded-xl shadow-lg shadow-orange-500/20 hover:bg-orange-600 transition-colors flex items-center gap-2">
+                        <i data-lucide="save" class="w-4 h-4"></i> Guardar Corrección
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+        
+        // Init DatePicker
+        flatpickr("#dateRange", {
+            mode: "range",
+            locale: "es",
+            dateFormat: "d-m-Y"
+        });
+
+        // Modal Logic
+        const modal = document.getElementById('editModal');
+        const modalContent = document.getElementById('modalContent');
+        const toggleBurbujas = document.getElementById('toggleBurbujas');
+        const toggleHorno = document.getElementById('toggleHorno');
+        const liveScore = document.getElementById('liveScore');
+        const modalId = document.getElementById('modalId');
+        
+        let currentBaseScore = 100; // Asumiendo perfecto
+
+        function openModal(id, score, hasBurbujas, hasHorno) {
+            modalId.textContent = id;
+            
+            // Setear estados iniciales
+            toggleBurbujas.checked = hasBurbujas;
+            toggleHorno.checked = hasHorno;
+            
+            // Calcular visualmente
+            updateScoreDisplay();
+
+            // Animación Entrada
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modalContent.classList.remove('scale-95', 'opacity-0');
+                modalContent.classList.add('scale-100', 'opacity-100');
+            }, 10);
+        }
+
+        function closeModal() {
+            modalContent.classList.remove('scale-100', 'opacity-100');
+            modalContent.classList.add('scale-95', 'opacity-0');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 200);
+        }
+
+        function updateScoreDisplay() {
+            let score = 95; // Base (ejemplo)
+            if (toggleBurbujas.checked) score -= 30;
+            if (toggleHorno.checked) score -= 20;
+            
+            // Color Coding Dinámico
+            liveScore.textContent = score;
+            if(score < 60) liveScore.className = "text-3xl font-bold text-red-500 transition-all duration-300";
+            else if(score < 80) liveScore.className = "text-3xl font-bold text-amber-500 transition-all duration-300";
+            else liveScore.className = "text-3xl font-bold text-emerald-500 transition-all duration-300";
+        }
+
+        // Listeners para recálculo en vivo
+        toggleBurbujas.addEventListener('change', updateScoreDisplay);
+        toggleHorno.addEventListener('change', updateScoreDisplay);
+
+        function saveChanges() {
+            const btn = document.querySelector('#editModal button.bg-gritsee-amber');
+            const originalContent = btn.innerHTML;
+            btn.innerHTML = '<i data-lucide="loader-2" class="w-4 h-4 animate-spin"></i> Guardando...';
+            
+            setTimeout(() => {
+                btn.innerHTML = '<i data-lucide="check" class="w-4 h-4"></i> Guardado';
+                btn.classList.remove('bg-gritsee-amber');
+                btn.classList.add('bg-emerald-500');
+                
+                setTimeout(() => {
+                    closeModal();
+                    // Reset btn style after close
+                    setTimeout(() => {
+                        btn.innerHTML = originalContent;
+                        btn.classList.add('bg-gritsee-amber');
+                        btn.classList.remove('bg-emerald-500');
+                    }, 300);
+                }, 800);
+            }, 1000);
+        }
+
+        // Cerrar al hacer click fuera
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gritsee AI | Carga y Simulación</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'], mono: ['JetBrains Mono', 'monospace'] },
+                    colors: {
+                        slate: { 50: '#f8fafc', 100: '#f1f5f9', 200: '#e2e8f0', 800: '#1e293b', 900: '#0f172a' },
+                        gritsee: { amber: '#f59e0b', teal: '#14b8a6' }
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.3s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(10px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 h-screen flex overflow-hidden">
+
+    <aside class="w-64 bg-white border-r border-slate-200 flex flex-col shadow-sm">
+        <div class="p-6 flex items-center gap-3">
+            <div class="w-8 h-8 bg-gritsee-amber rounded-lg flex items-center justify-center text-white font-bold shadow-lg shadow-orange-500/20">G</div>
+            <span class="text-xl font-bold tracking-tight text-slate-900">Gritsee AI</span>
+        </div>
+        <nav class="flex-1 px-4 space-y-2 mt-4">
+            <a href="dashboard_v5.html" class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:bg-slate-100 hover:text-slate-900 rounded-xl transition-colors">
+                <i data-lucide="layout-dashboard" class="w-5 h-5"></i> Dashboard
+            </a>
+            <a href="#" class="flex items-center gap-3 px-4 py-3 bg-gritsee-amber/10 text-orange-600 rounded-xl font-medium">
+                <i data-lucide="upload-cloud" class="w-5 h-5"></i> Cargar Inspección
+            </a>
+            <a href="#" class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:bg-slate-100 hover:text-slate-900 rounded-xl transition-colors">
+                <i data-lucide="history" class="w-5 h-5"></i> Historial
+            </a>
+        </nav>
+        <div class="p-4 border-t border-slate-200">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-xs font-bold text-slate-600">AD</div>
+                <div><p class="text-sm font-medium text-slate-900">Admin Molino</p><p class="text-xs text-slate-500">Gerente</p></div>
+            </div>
+        </div>
+    </aside>
+
+    <main class="flex-1 flex flex-col relative overflow-hidden bg-slate-50">
+        
+        <header class="h-16 border-b border-slate-200 bg-white/80 flex items-center justify-between px-8 backdrop-blur-md sticky top-0 z-10">
+            <h2 class="font-semibold text-slate-700">Nueva Carga de Datos</h2>
+        </header>
+
+        <div class="flex-1 overflow-auto p-8 relative">
+            <div class="max-w-3xl mx-auto flex flex-col items-center">
+                
+                <div id="uploadArea" class="w-full transition-all duration-500 mb-8">
+                    
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-500 uppercase mb-2">Sucursal</label>
+                                <input list="locations" id="locationInput" type="text" placeholder="Selecciona..." 
+                                    class="w-full bg-slate-50 border border-slate-300 rounded-lg py-2 px-4 focus:ring-2 focus:ring-gritsee-amber outline-none">
+                                <datalist id="locations">
+                                    <option value="Molino"><option value="Cardenas"><option value="Centro">
+                                </datalist>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-500 uppercase mb-2">Archivo CSV</label>
+                                <input type="file" id="fileInput" accept=".csv" class="w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-orange-50 file:text-orange-700 hover:file:bg-orange-100 cursor-pointer">
+                            </div>
+                        </div>
+
+                        <button onclick="startProcessing()" id="processBtn" class="w-full bg-slate-900 text-white font-bold py-3 rounded-xl hover:bg-slate-800 transition-colors flex items-center justify-center gap-2 opacity-50 cursor-not-allowed shadow-md" disabled>
+                            <i data-lucide="play" class="w-4 h-4"></i>
+                            <span>Ejecutar Análisis</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="resultsContainer" class="w-full hidden">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-sm font-bold text-slate-700 uppercase flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                            Procesando en Tiempo Real
+                        </h3>
+                        <span id="counter" class="text-xs text-slate-500 font-mono">0/0</span>
+                    </div>
+
+                    <div id="predictionList" class="space-y-4 mb-8">
+                        </div>
+
+                    <div id="summarySection" class="hidden animate-fade-in pb-12">
+                        <div class="bg-emerald-50 border border-emerald-100 p-6 rounded-xl text-center mb-6">
+                            <div class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-3 text-emerald-600">
+                                <i data-lucide="check" class="w-6 h-6"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-emerald-800">Carga Finalizada</h3>
+                            <p class="text-emerald-600 text-sm">Todos los registros han sido actualizados.</p>
+                        </div>
+                        <a href="dashboard_v5.html" class="block w-full bg-gritsee-amber text-white font-bold py-4 rounded-xl hover:bg-orange-600 transition-colors shadow-lg text-center transform hover:scale-[1.02] duration-200">
+                            Mostrar Resumen Dashboard
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script>
+        lucide.createIcons();
+
+        // Elementos
+        const fileInput = document.getElementById('fileInput');
+        const processBtn = document.getElementById('processBtn');
+        const locationInput = document.getElementById('locationInput');
+        const resultsContainer = document.getElementById('resultsContainer');
+        const predictionList = document.getElementById('predictionList');
+        const summarySection = document.getElementById('summarySection');
+        const counter = document.getElementById('counter');
+
+        // Habilitar botón si hay datos
+        function checkInputs() {
+            if (fileInput.files.length > 0 && locationInput.value) {
+                processBtn.disabled = false;
+                processBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+            }
+        }
+        fileInput.addEventListener('change', checkInputs);
+        locationInput.addEventListener('input', checkInputs);
+
+        // Lógica de Simulación
+        function startProcessing() {
+            // Bloquear inputs visualmente
+            processBtn.innerHTML = '<i data-lucide="loader-2" class="w-4 h-4 animate-spin"></i> Analizando...';
+            processBtn.disabled = true;
+            processBtn.classList.add('opacity-75');
+            document.getElementById('uploadArea').classList.add('opacity-50', 'pointer-events-none');
+            
+            resultsContainer.classList.remove('hidden');
+            lucide.createIcons(); // Refrescar iconos
+
+            const loc = locationInput.value;
+            const totalItems = 15; // Cantidad de items a simular
+            let currentItem = 0;
+
+            const interval = setInterval(() => {
+                currentItem++;
+                
+                // Generar datos aleatorios para la simulación
+                const isPass = Math.random() > 0.3; // 70% probabilidad de éxito
+                const score = isPass ? Math.floor(Math.random() * 20) + 80 : Math.floor(Math.random() * 40) + 40;
+                
+                // Crear tarjeta HTML
+                const card = createPredictionCard(currentItem, loc, score, isPass);
+                predictionList.appendChild(card);
+                
+                // Actualizar contador
+                counter.textContent = `${currentItem} procesados`;
+
+                // Auto-scroll al fondo
+                window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+
+                // Finalizar
+                if (currentItem >= totalItems) {
+                    clearInterval(interval);
+                    summarySection.classList.remove('hidden');
+                    processBtn.innerHTML = '<i data-lucide="check" class="w-4 h-4"></i> Completado';
+                    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+                }
+
+            }, 800); // Velocidad de aparición (0.8 segundos por item)
+        }
+
+        function createPredictionCard(index, location, score, isPass) {
+            const div = document.createElement('div');
+            div.className = "bg-white p-4 rounded-lg border border-slate-200 shadow-sm animate-fade-in hover:shadow-md transition-shadow";
+            
+            // Datos simulados según lógica de negocio
+            const horneado = isPass ? "correcto" : (Math.random() > 0.5 ? "bajo" : "excesivo");
+            const burbujas = isPass ? "False" : "True";
+            const bordes = isPass ? "False" : (Math.random() > 0.5 ? "True" : "False");
+            const dist = isPass ? "correcta" : "media";
+            
+            // Icono y Color
+            const icon = isPass ? "✅" : "⚠️";
+            const scoreColor = isPass ? "text-emerald-600" : "text-red-600";
+
+            div.innerHTML = `
+                <div class="font-mono text-xs text-slate-500 bg-slate-50 p-3 rounded mb-3 border border-slate-100">
+                    <p class="text-slate-400 select-none">---Predicciones:</p>
+                    <p>horneado=<span class="text-slate-700">${horneado}</span></p>
+                    <p>burbujas=<span class="${burbujas === 'True' ? 'text-red-500 font-bold' : 'text-slate-700'}">${burbujas}</span></p>
+                    <p>bordes_sucios=<span class="${bordes === 'True' ? 'text-red-500 font-bold' : 'text-slate-700'}">${bordes}</span></p>
+                    <p>grasa=<span class="text-slate-700">False</span></p>
+                    <p>dist=<span class="text-slate-700">${dist}</span></p>
+                    <p class="text-slate-400 select-none">------------------</p>
+                </div>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-2 font-bold text-sm text-slate-800">
+                        <span>${icon} [${index}]</span>
+                        <span class="uppercase tracking-wide text-xs bg-slate-100 px-2 py-1 rounded text-slate-600">${location}</span>
+                    </div>
+                    <span class="${scoreColor} font-bold font-mono text-base">${score}pts</span>
+                </div>
+            `;
+            return div;
+        }
+    </script>
+</body>
+</html>

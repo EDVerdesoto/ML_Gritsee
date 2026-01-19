@@ -34,13 +34,16 @@ class InspeccionCreate(InspeccionBase):
 class InspeccionResponse(InspeccionCreate):
     id: int
     fecha_hora: datetime
-
+    aws_link: Optional[str] = None
+    horneado_clase: Optional[str] = None     
+    distribucion_clase: Optional[str] = None 
+    
     class Config:
         from_attributes = True # Antes se llamaba orm_mode
 
 class InspeccionUpdate(BaseModel):
-    tiene_burbujas: Optional[bool] = None
-    bordes_sucios: Optional[bool] = None
-    tiene_grasa: Optional[bool] = None
+    tiene_burbujas: Optional[int] = None  # Acepta 0/1
+    bordes_sucios: Optional[int] = None   # Acepta 0/1
+    tiene_grasa: Optional[int] = None     # Acepta 0/1
     horneado_clase: Optional[str] = None
     distribucion_clase: Optional[str] = None

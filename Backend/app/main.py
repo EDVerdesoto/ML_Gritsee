@@ -1,56 +1,51 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.db.session import engine, Base
-from app.models import inspeccion  # Importante: Importar los modelos para que SQLAlchemy los vea
-from app.api.v1.endpoints import inspeccion_endpoints, dashboard_endpoints
+from app.models import inspeccion  
+from app.models import user 
+from app.api.v1.endpoints import inspeccion_endpoints, dashboard_endpoints, auth_endpoints 
 from contextlib import asynccontextmanager
 from app.core.model_loader import model_manager
 
 # --- CREACIÓN DE TABLAS ---
-# Si las tablas no existen, se crean basándose en los modelos definidos
+# Al importar 'user' arriba, SQLAlchemy ya sabe que debe crear la tabla 'users'
 Base.metadata.create_all(bind=engine)
 
-# --- CICLO DE VIDA (LIFESPAN) ---
-# Esta es la solución al error de Windows.
-# Los modelos se cargarán SOLO UNA VEZ cuando el servidor arranque.
+# --- CICLO DE VIDA ---
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # 1. Al arrancar:
     print("Iniciando servidor y cargando modelos de IA")
-    model_manager.load_models() # <--- AQUÍ CARGAMOS LOS MODELOS
+    model_manager.load_models() 
     yield
-    # 2. Al apagar:
     print("Apagando servidor")
 
 # --- CONFIGURACIÓN DE LA API ---
 app = FastAPI(
     title="API Control Calidad Pizzas",
     description="Sistema de inspección automatizada con Computer Vision",
-    version="1.0.0"
+    version="1.0.0",
+    lifespan=lifespan 
 )
 
-# --- CONFIGURACIÓN CORS (CRÍTICO PARA FRONTEND) ---
-# Comunicacion de react con bacvkend
+# --- CONFIGURACIÓN CORS ---
+# 2. En production, 'origins' NO puede ser ["*"], debe ser el dominio real.
 origins = [
-    "http://localhost",
-    "http://localhost:3000", # Puerto común de React
-    "http://localhost:5173", # Puerto común de Vite
-    "*"                      # Permitir todo (solo para desarrollo/MVP) TODO !!!! borrar en producción !!!!
+    "http://localhost:5173", 
+    "http://localhost:3000", 
 ]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,       # Quién puede llamar a la API  
+    allow_origins=origins,
     allow_credentials=True,
-    allow_methods=["*"],         # Permitir todos los métodos (GET, POST, etc.) TODO !! MODIFICAR EN PRODUCCIÓN !!
-    allow_headers=["*"],         # Permitir todos los headers TODO !! MODIFICAR EN PRODUCCIÓN !!
+    allow_methods=["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+    allow_headers=["Content-Type", "Authorization", "Accept"],
 )
 
 # --- RUTAS BÁSICAS ---
 
 @app.get("/")
 def read_root():
-    """Endpoint raíz para verificar que la API está viva."""
     return {
         "sistema": "Gritsee Quality Control AI",
         "estado": "ONLINE",
@@ -59,20 +54,27 @@ def read_root():
 
 @app.get("/health")
 def health_check():
-    """Endpoint de salud para monitoreo."""
     return {"status": "ok", "db_connected": True}
 
-# --- AQUÍ IMPORTAREMOS TUS FUTUROS ROUTERS ---
-# TODO : Importar y agregar routers de endpoints aquí
+# --- ROUTERS DE LA API ---
 
+# 1. Router de Inspecciones
 app.include_router(
     inspeccion_endpoints.router,
-    prefix="/api/v1/inspecciones", #control de versiones, si saco v2, solo cambio aqui
-    tags=["Carga de Datos"]
+    prefix="/api/v1/inspecciones",
+    tags=["Inspecciones"]
 )
 
+# 2. Router de Dashboard
 app.include_router(
     dashboard_endpoints.router,
     prefix="/api/v1/dashboard",
-    tags=["Dashboard y Métricas"]
+    tags=["Dashboard"]
+)
+
+# 3. Router de Autenticación
+app.include_router(
+    auth_endpoints.router,
+    prefix="/api/v1/auth", 
+    tags=["Auth"]
 )
